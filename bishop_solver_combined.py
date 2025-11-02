@@ -297,10 +297,10 @@ algorithm_choice = st.radio(
 col1, col2 = st.columns(2)
 with col1:
     if "CP-SAT" in algorithm_choice:
-        n = st.number_input("Board size (n)", min_value=1, max_value=15, value=8,
+        n = st.number_input("Board size (n)", min_value=1, max_value=55, value=8,
                            help="Size of the chessboard (n×n)")
     else:
-        n = st.number_input("Board size (n)", min_value=1, max_value=20, value=8,
+        n = st.number_input("Board size (n)", min_value=1, max_value=50, value=8,
                            help="Size of the chessboard (n×n)")
 with col2:
     if "CP-SAT" in algorithm_choice:
